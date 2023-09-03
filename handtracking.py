@@ -72,7 +72,7 @@ while cap.isOpened():
     result = ''.join(str(item) for item in finger_states)
     print(result)
     arduino.write(bytes(result, 'utf-8'))
-    time.sleep(1)
+    time.sleep(2)
 
     # Display the frame
     cv2.imshow("Hand Tracking", frame)
